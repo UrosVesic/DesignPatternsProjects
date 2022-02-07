@@ -1,0 +1,25 @@
+
+
+Datum:Tue Dec 07 23:41:33 CET 2021 Naziv operacije:nadjiDomenskiObjekat
+Datum:Tue Dec 07 23:42:36 CET 2021 Naziv operacije:nadjiDomenskiObjekat
+Domenski objekat:null Poruka:Систем не може да нађе ски карту.
+Datum:Fri Dec 17 17:12:26 CET 2021 Naziv operacije:nadjiDomenskiObjekat
+Domenski objekat:3, 'Mika Mikic', 30000, 7, 'Wed Nov 24 00:00:00 CET 2021' Poruka:Систем je нашао ски карту.
+Datum:Fri Dec 17 17:12:36 CET 2021 Naziv operacije:promeniDomenskiObjekat
+Domenski objekat:3, 'Mika Mikic', 0, 7, '2021-11-24' Poruka:Систем je променио ски карту.
+Datum:Fri Dec 17 17:14:32 CET 2021 Naziv operacije:nadjiDomenskiObjekat
+Domenski objekat:3, 'Mika Mikic', 20000, 7, 'Wed Nov 24 00:00:00 CET 2021' Poruka:Систем je нашао ски карту.
+Datum:Fri Dec 17 17:14:37 CET 2021 Naziv operacije:promeniDomenskiObjekat
+Domenski objekat:3, 'Mika Mikic', 16000, 7, '2021-11-24' Poruka:Систем je променио ски карту.
+Datum:Fri Dec 17 17:15:02 CET 2021 Naziv operacije:nadjiDomenskiObjekat
+Domenski objekat:null Poruka:Систем не може да нађе ски карту.
+Datum:Fri Dec 17 17:15:02 CET 2021 Naziv operacije:kreirajDomenskiObjekat
+Domenski objekat:13, '', 0, 0, '2021-12-17' Poruka:Систем је креирао нову ски карту.
+Datum:Fri Dec 17 17:15:07 CET 2021 Naziv operacije:obrisiDomenskiObjekat
+Domenski objekat:13, '', 0, 0, '2021-12-17' Poruka:Систем je oбрисао ски карту.
+Datum:Tue Jan 18 23:00:12 CET 2022 Naziv operacije:nadjiDomenskiObjekat
+Domenski objekat:1, 'Uros Vesic', 34000, 6, 'Wed Nov 24 00:00:00 CET 2021' Poruka:Систем je нашао ски карту.
+Datum:Tue Jan 18 23:00:15 CET 2022 Naziv operacije:nadjiDomenskiObjekat
+Domenski objekat:null Poruka:Систем не може да нађе ски карту.
+Datum:Tue Jan 18 23:00:17 CET 2022 Naziv operacije:nadjiDomenskiObjekat
+Domenski objekat:3, 'Mika Mikic', 18000, 7, 'Wed Nov 24 00:00:00 CET 2021' Poruka:Систем je нашао ски карту.
