@@ -15,7 +15,7 @@ import java.util.Date;
  *
  * @author UrosVesic
  */
-public class DKSkiKarta implements Serializable, GeneralDObject {
+public class DKSkiKarta implements Serializable, OpstiDomenskiObjekat {
 
     private int sifraSkiKarte;
     private String imePrezimeKupca;
@@ -127,7 +127,7 @@ public class DKSkiKarta implements Serializable, GeneralDObject {
     }
 
     @Override
-    public GeneralDObject getNewRecord(ResultSet rs) throws SQLException {
+    public OpstiDomenskiObjekat getNewRecord(ResultSet rs) throws SQLException {
         return new DKSkiKarta(rs.getInt("sifraSkiKarte"), rs.getString("imePrezimeKupca"), rs.getInt("cena"), rs.getInt("sifraSkiCentra"), new Date(rs.getDate("datumIzdavanja").getTime()));
     }
 
