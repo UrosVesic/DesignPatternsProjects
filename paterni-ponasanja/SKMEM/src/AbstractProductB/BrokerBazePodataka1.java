@@ -7,7 +7,7 @@ import java.sql.*;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import DomainClasses.OpstiDomenskiObjekat;
+import DomainClasses.GeneralDObject;
 
 
 
@@ -34,7 +34,7 @@ public class BrokerBazePodataka1 extends BrokerBazePodataka
   
   
     @Override
-    public boolean insertRecord(OpstiDomenskiObjekat odo)
+    public boolean insertRecord(GeneralDObject odo)
     {  
        String upit = "INSERT INTO " + odo.getClassName() +  " VALUES (" + odo.getAtrValue() + ")";
        return executeUpdate(upit);
@@ -43,7 +43,7 @@ public class BrokerBazePodataka1 extends BrokerBazePodataka
 
    
     @Override
-    public boolean getCounter(OpstiDomenskiObjekat odo,AtomicInteger counter) 
+    public boolean getCounter(GeneralDObject odo,AtomicInteger counter) 
     {  
         String sql = "SELECT Counter FROM Counter WHERE TableName = '" + odo.getClassName() + "'";
        
@@ -65,25 +65,25 @@ public class BrokerBazePodataka1 extends BrokerBazePodataka
     }
   
     @Override
-    public boolean increaseCounter(OpstiDomenskiObjekat odo,AtomicInteger counter) 
+    public boolean increaseCounter(GeneralDObject odo,AtomicInteger counter) 
     {   String  upit = "UPDATE Counter SET Counter =" + counter.get() + " WHERE TableName = '" + odo.getClassName() + "'";
        return executeUpdate(upit);
     }
   
     @Override
-    public boolean deleteRecord(OpstiDomenskiObjekat odo) 
+    public boolean deleteRecord(GeneralDObject odo) 
     {   String upit ="DELETE FROM " + odo.getClassName() + " WHERE " + odo.getWhereCondition();
         return executeUpdate(upit);
     }
 
     @Override
-    public boolean updateRecord(OpstiDomenskiObjekat odo,OpstiDomenskiObjekat odoold) 
+    public boolean updateRecord(GeneralDObject odo,GeneralDObject odoold) 
     {   String  upit = "UPDATE " + odo.getClassName() +  " SET " + odo.setAtrValue() +   " WHERE " + odoold.getWhereCondition();
         return executeUpdate(upit);       
     }
 
     @Override
-    public boolean updateRecord(OpstiDomenskiObjekat odo) 
+    public boolean updateRecord(GeneralDObject odo) 
     {   String  upit = "UPDATE " + odo.getClassName() +  " SET " + odo.setAtrValue() +   " WHERE " + odo.getWhereCondition();
         return executeUpdate(upit);       
     }
@@ -103,7 +103,7 @@ public class BrokerBazePodataka1 extends BrokerBazePodataka
     }
    
     @Override
-    public OpstiDomenskiObjekat findRecord(OpstiDomenskiObjekat odo) 
+    public GeneralDObject findRecord(GeneralDObject odo) 
     {   ResultSet rs = null;
         Statement st = null;
         String  upit = "SELECT * FROM " + odo.getClassName() +  " WHERE " + odo.getWhereCondition();
